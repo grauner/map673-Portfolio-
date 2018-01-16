@@ -546,5 +546,4 @@ This lesson walked us through the basics of using Bootstrap and developing or mo
 * [Bootswatch](https://bootswatch.com/)
 * [Font Awesome](https://bootswatch.com/)
 * [Font Awesome Bootstrap Cheetsheet](https://fontawesome.bootstrapcheatsheets.com/)
-* []()
 
