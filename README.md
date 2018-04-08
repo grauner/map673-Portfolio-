@@ -30,7 +30,7 @@ Rather than making a map, this lesson guides us through the process of making a 
 
 In chapter one of his book, The Shape of Design (2012), Frank Chimero argues that we must consider questions of Why just as much as questions of How. He goes as far as to suggest the two are interlinked, and both are necessary for design to be successful. Before embarking on a set of tasks to build a portfolio site, you should reflect a bit on why you are making such a product (other than because it's the assignment).
 
-Prior to continuing through the lesson, read the [Introduction](http://shapeofdesignbook.com/chapters/00-introduction/) and [Chapter One](http://shapeofdesignbook.com/chapters/01-how-and-why/) of The Shape of Design (a mere 13 pages in total). While the lesson guides you through much of the _How_ for completing the [lab assignment](assignment-01.md), you should be thinking of a strategy for your web portfolio and more deeply about its purpose. Is it to showcase your maps to impress your boss and coworkers in hopes of a promotion? Is it to get a job or apply for a new one? Is it to share your cartographic interests and passion with a broader sphere of public and private viewers? This analysis will help inform questions of what form the content should take. It will help make your work original, despite borrowing heavily from the examples referenced and demonstrated below.
+Prior to continuing through the lesson, read the [Introduction](http://shapeofdesignbook.com/chapters/00-introduction/) and [Chapter One](http://shapeofdesignbook.com/chapters/01-how-and-why/) of The Shape of Design (a mere 13 pages in total). While the lesson guides you through much of the _How_ for completing the [lab assignment](lab-01/), you should be thinking of a strategy for your web portfolio and more deeply about its purpose. Is it to showcase your maps to impress your boss and coworkers in hopes of a promotion? Is it to get a job or apply for a new one? Is it to share your cartographic interests and passion with a broader sphere of public and private viewers? This analysis will help inform questions of what form the content should take. It will help make your work original, despite borrowing heavily from the examples referenced and demonstrated below.
 
 ## Web design: using templates and frameworks
 
@@ -536,7 +536,7 @@ In this way, we can begin to customize the styles of our bootstrap theme without
 
 ## Conclusions: Toward Content
 
-This lesson walked us through the basics of using Bootstrap and developing or modifying a CSS theme. The purpose of a web portfolio, however, isn't merely to display a working website with Lorem ipsum content. In order for the form to work, it needs a purpose. Your task within the [assignment](assignment-01.md) is to complete this design process by populating a working portfolio page with content.
+This lesson walked us through the basics of using Bootstrap and developing or modifying a CSS theme. The purpose of a web portfolio, however, isn't merely to display a working website with Lorem ipsum content. In order for the form to work, it needs a purpose. Your task within the [assignment](lab-01/) is to complete this design process by populating a working portfolio page with content.
 
 ## Resources
 
