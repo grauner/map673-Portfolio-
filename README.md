@@ -71,7 +71,7 @@ You also want to consider the following when selecting one to go with:
 
 Bootstrap is what's known as a "front-end framework." This means that beyond the more simple CSS boilerplates, Bootstrap also includes JavaScript for fun UX/UI experiences such as dropdowns, image carousels, tooltips, and smooth scrolling behavior. Additionally, Bootstrap is dependent upon JQuery to work (whereas a simple CSS grid is not).
 
-Begin by navigating your web browser to the [Bootstrap website](https://getbootstrap.com/). Fortunately, Bootstrap recently released its beta version 4.0, so we can go ahead and start learning it now. In particular, this version creates leverage with the new [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox?redirectlocale=en-US&redirectslug=CSS%2FTutorials%2FUsing_CSS_flexible_boxes) web standard.
+Begin by navigating your web browser to the [Bootstrap website](https://getbootstrap.com/). Fortunately, Bootstrap recently released version 4.0, so we can go ahead and start learning it now. In particular, this version creates leverage with the new [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox?redirectlocale=en-US&redirectslug=CSS%2FTutorials%2FUsing_CSS_flexible_boxes) web standard.
 
 ![Bootstrap Website](graphics/bootstrap.png)  
 Figure 01. Bootstrap's website.
@@ -100,7 +100,7 @@ To begin, open the **index.html** file found within the **lesson-01/** directory
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Hello, world!</title>
   </head>
@@ -111,7 +111,7 @@ To begin, open the **index.html** file found within the **lesson-01/** directory
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
 ```
@@ -348,7 +348,7 @@ But when starting with a framework like Bootstrap, we're also eager to merely sn
 
 ### Accessing Bootstrap template example source code
 
-At the top of the examples page, choose to [Download the Bootstrap source code](https://github.com/twbs/bootstrap/archive/v4.0.0-beta.3.zip) and save the zip file to your computer. But do download the file and save it outside of your working NMP repository for module 01. We're just going to be examining the source code with our code editors.
+At the top of the examples page, choose to [Download the Bootstrap source code](https://github.com/twbs/bootstrap/releases/download/v4.0.0/bootstrap-4.0.0-dist.zip) and save the zip file to your computer. Download the file and save it outside of your working NMP repository for module 01. We're just going to be examining the source code with our code editors (no need to include in the repo for submission).
 
 Unzip the file, which contains the GitHub repository for Bootstrap (also available here https://github.com/twbs/bootstrap). There are many files and folders within the unzipped directory, many of which will be unfamiliar and involve build processes for the project from the source code. That is a bit beyond this course (though we cover it in MAP675!), but for now we want to draw our attention to two directories within this repository.
 
@@ -362,7 +362,7 @@ We can also navigate into the **docs/** directory to find a directory named **ex
 ![Finding the "examples" code in the Bootstrap repository](graphics/bootstrap-examples.gif)  
 Figure 20. Finding the "examples" code in the Bootstrap repository.
 
-Open the entire **bootstrap-4.0.0-beta.3/** directory in a text editor such as Atom or Brackets (but again, keep this separate in your text editor from your module-01 code and don't get the various **index.html** files confused). Within our text editor, find the **starter-template/** directory and open the two files it comprises with your code editor: the usual **index.html** file and a file named **starter-template.css**.
+Open the entire **bootstrap-4.0.0-dist/** directory in a text editor such as Atom or Brackets (but again, keep this separate in your text editor from your module-01 code and don't get the various **index.html** files confused). Within our text editor, find the **starter-template/** directory and open the two files it comprises with your code editor: the usual **index.html** file and a file named **starter-template.css**.
 
 Note that you can render the examples in your browser using a local host/live-server, to examine the output in your browser. You'll need to navigate to the correct path within the URL bar of your browser (e.g., `http://localhost/docs/4.0/examples/starter-template/`).
 
