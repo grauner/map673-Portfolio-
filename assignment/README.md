@@ -1,6 +1,12 @@
 # Assignment 01
 
-Make a personal web portfolio using Bootstrap (or another boilerplate/framework of your choosing). You should build this portfolio within the **lesson-01/** directory of your **map673-module-01-_username_/** repository (and commit and push changes as you work). This way your instructor can easily help you diagnose problems along the way.
+Assignment 01 requires the completion of three parts:
+
+* Part I: respond to the [Introductions](https://uk.instructure.com/courses/1952466/discussion_topics/12289608) Discussion thread within Canvas. (**1 pt**)
+* Part II: respond to [Reading response #1](https://uk.instructure.com/courses/1952466/discussion_topics/12289618) Discussion thread within Canvas. (**1 pt**)
+* Part III: make a personal web portfolio using Bootstrap (or another boilerplate/framework of your choosing). (**8 pts**) 
+
+You should build your portfolio within the **lesson-01/** directory of your **map673-module-01-_username_/** repository (and commit and push changes as you work). This way your instructor can easily help you diagnose problems along the way.
 
 However, the final product will be copied over to a new repository you'll create on your personal GitHub account (see the [instructions below](#hosting-your-portfolio-on-github-pages)).
 
@@ -13,7 +19,7 @@ Requirements for the deliverable:
 * Portfolio should minimally link to your GitHub account (and other websites, social media, and contact information of your choice).
 * Portfolio should be usable on mobile, tablet, and desktop devices.
 
-Use the **lesson-01-template/** provided for guidance and submit a URL to the portfolio within Canvas by the due date.
+Use the *lesson-template/* provided within the *module-01/* directory for guidance and submit a URL to the portfolio within Canvas by the due date.
 
 ## Recommendations for completing the portfolio
 
