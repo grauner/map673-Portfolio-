@@ -82,10 +82,10 @@ You also want to consider the following when selecting one to go with:
 
 Bootstrap is what's known as a "front-end framework." This means that beyond the more simple CSS boilerplates, Bootstrap also includes JavaScript for fun UX/UI experiences such as dropdowns, image carousels, tooltips, and smooth scrolling behavior. Additionally, Bootstrap is dependent upon JQuery to work (whereas a simple CSS grid is not).
 
-Begin by navigating your web browser to the [Bootstrap website](https://getbootstrap.com/). Fortunately, Bootstrap recently released version 4.0, so we can go ahead and start learning it now. In particular, this version creates leverage with the new [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox?redirectlocale=en-US&redirectslug=CSS%2FTutorials%2FUsing_CSS_flexible_boxes) web standard.
+Begin by navigating your web browser to the [Bootstrap website](https://getbootstrap.com/). Fortunately, Bootstrap recently released version 4.4, so we can go ahead and start learning it now. Check out [their blog](https://blog.getbootstrap.com/) to see what new features Bootstrap is adding in their releases.
 
 ![Bootstrap Website](graphics/bootstrap.png)  
-**Figure 01.** Bootstrap's website.
+*Bootstrap's website.*
 
 You should spend some more time reading through the (https://getbootstrap.com/)
 the [documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/),
@@ -94,7 +94,7 @@ and investigating the [examples](https://getbootstrap.com/docs/4.0/examples/) af
 We won't be building many "websites" in the course. Beyond the need for a nice portfolio, we're primarily interested in building single-page web map applications. These applications involve building up a "user interface" (UI), which we'll cover in greater detail in subsequent lessons. For now, however, scroll through the available [Components](https://getbootstrap.com/docs/4.0/components/alerts/) that Bootstrap supports and consider how these might be used within an interactive web map.
 
 ![Exploring Bootstrap's supported components](graphics/bootstrap-components.gif)  
-**Figure 02.** Exploring Bootstrap's supported components.
+*Exploring Bootstrap's supported components.*
 
 Following from [Chimero's first chapter](http://shapeofdesignbook.com/chapters/01-how-and-why/), the JavaScript libraries and CSS frameworks we'll be using (like Bootstrap) help us overcome a lot of the _How_ question of design, leaving us more room to focus on the _Why_ question. When it comes to interactive maps, we often want to give the user the ability to manipulate and engage with the application? But why? We do so because the user wants to re-express the data with a new variable or retrieve more specific information. To design these solutions we make use of a variety of UI solutions, most of which are reasonably standardized (such as drop-down menus, range sliders, or tooltips). As you experiment with Bootstrap this week, keep in mind how you as a user interact with maps, as well as how you anticipate users interacting with your maps. And make a mental note when a component or utility within Bootstrap may help you figure _how_ to achieve it.
 
@@ -111,7 +111,7 @@ To begin, open the **index.html** file found within the **lesson-01/** directory
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Hello, world!</title>
   </head>
@@ -120,9 +120,9 @@ To begin, open the **index.html** file found within the **lesson-01/** directory
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
 ```
@@ -130,7 +130,7 @@ To begin, open the **index.html** file found within the **lesson-01/** directory
 Loading this page in your browser produces an unstyled document:
 
 ![The unstyled starter template](graphics/unstyled-starter.png)  
-**Figure 03.** The unstyled starter template.
+*The unstyled starter template.*
 
 Not very exciting? Let's introduce how we use Bootstrap to apply CSS rules to our document.
 
@@ -145,14 +145,14 @@ Drawing first from the documentation on [Layout](https://getbootstrap.com/docs/4
 Note that we're applying a class of `container` to the div element. The Bootstrap CSS file we loaded into the document provides style rules for a class named `container`, and if we refresh our browser, we can see a modest adjustment to the layout.
 
 ![Adding a container class to a div element](graphics/style-container.png)  
-**Figure 04.** Adding a container class to a div element.
+*Adding a container class to a div element.*
 
 We now want to open our web development tools to understand better how Bootstrap applies CSS rules to elements within this straightforward document (the only elements we currently have is the div tag and the h1 tag it's enclosing).
 
 Open your web dev tools and click on the Inspector tab (called "Elements" in Chrome). You can use this to see the DOM structure of the document, as well as the CSS style rules applied to elements (in the right-side panel). Within the panel showing the CSS styles at right, you can also dynamically adjust style rules, modifying values or checking/unchecking rules. These aren't changing the files producing the CSS, but only how the browser is currently rendering the document.
 
 ![Inspecting the page with the web developer tools](graphics/inspect-01.gif)  
-**Figure 05.** Inspecting the page with the web developer tools.
+*Inspecting the page with the web developer tools.*
 
 Now modify your HTML further, adding two additional class names to our div element:
 
@@ -165,7 +165,7 @@ Now modify your HTML further, adding two additional class names to our div eleme
 These two classes are specifying that the div element should have a margin on the top with a value of `5` (`mt-5`) and padding within it of a value of `4` (`p-4`). Saving the changes and refreshing the page shows the additional adjustments to the layout:
 
 ![Class rules affecting the layout of elements](graphics/inspect-classes.png)  
-**Figure 06.** Class rules affecting the layout of elements.
+*Class rules affecting the layout of elements.*
 
 We can add two additional classes to see better what's going on, one to give the div element a background color and the other to change the font color of the enclosed text:
 
@@ -178,12 +178,12 @@ We can add two additional classes to see better what's going on, one to give the
 We can now visually see how the margin and padding have affected the layout of the elements. Within the panel at the right, we see the specific CSS style rules Bootstrap applies to these elements.
 
 ![Inspecting the class rules applied with Bootstrap's class names](graphics/inspect-classes-02.png)  
-**Figure 07.** Inspecting the class rules applied with Bootstrap's class names
+*Inspecting the class rules applied with Bootstrap's class names*
 
 It is critical to note the inclusion of `!important` within some of the rule properties. This addition to a rule means that it cannot be over-written by a rule declaration applied later on within the natural cascading of rules (such as in our custom CSS stylesheet). Though the use of this rule within your own stylesheets is considered bad practice and should be avoided, Bootstrap applies `!important` to some rules so that they remain consistent no matter what (for better or worse).
 
 ![Noting the !important rule included in some class definitions](graphics/important-rule.png)  
-**Figure 08.** Noting the !important rule included in some class definitions.
+*Noting the !important rule included in some class definitions.*
 
 Remember Bootstrap's use of the `!important` rule when you're tweaking the style of a design or theme with your custom CSS rules and the changes appear not to take effect.
 
@@ -197,14 +197,14 @@ Getting to know a framework's documentation well is essential to successful deve
 To answer our margin and padding class names question we can search Bootstrap's documentation by those names. This will help us identify which sections hold our desired information.
 
 ![Searching Bootstrap's documentation](graphics/search-docs.gif)  
-**Figure 09.** Searching Bootstrap's documentation.
+*Searching Bootstrap's documentation.*
 
 We see that Bootstrap's documentation briefly describes how to use margin and padding under a section called [Utilities for layout](https://getbootstrap.com/docs/4.0/layout/utilities-for-layout/#margin-and-padding). This subsection links us to another important piece of the documentation under [spacing and utilities](https://getbootstrap.com/docs/4.0/utilities/spacing/), which better explains the notation for setting margin and padding in the available directions (top, right, bottom, left, etc.). It also describes the set of pre-specified sizes (0 - 5), which correspond to a given value specified in rem units (you can inspect these again within the web developer toolbar's CSS rules).
 
 We can likewise search through the documentation to find the appropriate class names for applying background and text colors.
 
 ![Searching the documentation for background colors](graphics/search-docs-02.gif)  
-**Figure 10.** Searching the documentation for background colors.
+*Searching the documentation for background colors.*
 
 We can see from the documentation that the default Bootstrap CSS theme designates colors for a set of specific class names: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `muted`, and `white`. While there are other characters available within the theme (which we'll explore in a bit), Bootstrap establishes these for consistency across a website or application. 
 
@@ -221,7 +221,7 @@ Try modifying the `bg-dark` rule we've applied to the div element. For instance,
 This will apply the color associated with the `bg-primary` class defined within the stylesheet of Bootstrap's default theme (the blue hue represented by the hexadecimal value of `007bff`):
 
 ![A `bg-primary` class applied to a div](graphics/bg-primary.png)  
-**Figure 11.** A `bg-primary` class applied to a div.
+*A `bg-primary` class applied to a div.*
 
 Bootstrap provides a set of pre-established colors within the CSS. Before we dig into Bootstrap's CSS, let's quickly introduce how grids are applied to design within such a framework.
 
@@ -259,7 +259,7 @@ We've added a `<div class="row"></div>` and within it placed three `<div class="
 Aforementioned should produce a page that looks like this:
 
 ![A three-column grid within Bootstrap](graphics/grid-example.png)  
-**Figure 12.** A three-column grid within Bootstrap.
+*A three-column grid within Bootstrap.*
 
 Of course, we've also included some other class names on those div elements for styling. Namely:
 
@@ -277,7 +277,7 @@ But first, let's cover how we make this page responsive to various devices our u
 With this mode enabled, we can see how the widths of elements are not fixed but are flexible.
 
 ![A fluid but not reponsive grid solution](graphics/grid-system.gif)  
-**Figure 13.** A fluid but not reponsive grid solution.
+*A fluid but not responsive grid solution.*
 
 Ideally, the three columns would adapt to the shrinking width of their container by stacking atop one another. Let's now learn how Boostrap's media queries help us achieve a responsive design.
 
@@ -288,7 +288,7 @@ A critical aspect to understand about web design in 2018 &ndash; and the use of 
 [Media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) work by setting particular "breakpoints" of the antipated device's width and applying particular style rules within those break points. The [responsive breakpoints](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints) within Bootstrap's default theme are 576px, 768px, 992px, and 1200px.
 
 ![The default breakpoints of Bootstrap's theme](graphics/breakpoints.png)  
-**Figure 14.** The default breakpoints of Bootstrap's theme.
+*The default breakpoints of Bootstrap's theme.*
 
 Bootstrap's CSS stylesheet has specified rules within each of these breakpoints and provided ways for us to apply these rules to various elements (see the documentation under [Grid options](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)). These include "prefixes" we can apply to HTML elements within our layout. For example, modify our existing code by appending a `-sm` to each of the columns:
 
@@ -307,7 +307,7 @@ Bootstrap's CSS stylesheet has specified rules within each of these breakpoints 
 Now, when we resize our browser, we can see how the column class is applied only to sizes above the small threshold (540px). Anything smaller than this and the `col` class isn't applied, and those division elements default back to being a block-level element (extending across the width of their container).
 
 ![A fluid and responsive grid solution](graphics/grid-system-responsive.gif)  
-**Figure 15.** A fluid and responsive grid solution.
+*A fluid and responsive grid solution.*
 
 If we dug into [Bootstrap's CSS file](https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap.css), we'd see the rules that make this happen:
 
@@ -341,17 +341,17 @@ An alternative when getting started is to use an existing template to help struc
 Note: Bootstrap's official examples are a great place to start. Bootstrap also offers more fully-designed themes at a premium price. Below, we'll explore the difference between templates and themes and point you in the direction of some free themes with which to play.
 
 ![Bootstrap's official examples](graphics/examples.png)  
-**Figure 16.** Bootstrap's official examples.
+*Bootstrap's official examples.*
 
 Click on the first one, a [basic starter template](https://getbootstrap.com/docs/4.0/examples/starter-template/) and switch into your responsive/device mode. We can see some menu items and a search form across the top. When adjusting the width of the viewport, we can see how the page "responds" by collapsing the menu.
 
 ![A responsive nav bar in Bootstrap's starter example](graphics/starter-responsive.gif)  
-**Figure 17.** A responsive nav bar in Bootstrap's starter example.
+*A responsive nav bar in Bootstrap's starter example.*
 
 We can also use our web developer tools to study the template's HTML and CSS.
 
 ![Inspecting the HTML and CSS of an example with the development tools](graphics/starter-inspect.gif)  
-**Figure 18.** Inspecting the HTML and CSS of an example with the development tools.
+*Inspecting the HTML and CSS of an example with the development tools.*
 
 As you become a more seasoned web (map) designer, it becomes even more essential to learn by example. Studying and understanding quality web pages like those offered by Bootstrap is a great way to expand your learning and gain knowledge of best practices.
 
@@ -361,53 +361,168 @@ But when starting with a framework like Bootstrap, we're also eager to merely sn
 
 At the top of the examples page, choose to [Download the Bootstrap source code](https://github.com/twbs/bootstrap/releases/download/v4.0.0/bootstrap-4.0.0-dist.zip) and save the zip file to your computer. Download the file and save it outside of your working NMP repository for module 01. We're just going to be examining the source code with our code editors (no need to include in the repo for submission).
 
-Unzip the file, which contains the GitHub repository for Bootstrap (also available here https://github.com/twbs/bootstrap). There are many files and folders within the unzipped directory, many of which will be unfamiliar and involve build processes for the project from the source code. That is a bit beyond this course (though we cover it in MAP675!), but for now we want to draw our attention to two directories within this repository.
+Unzip the file, which contains the GitHub repository for Bootstrap (also available here https://github.com/twbs/bootstrap). There are many files and folders within the unzipped directory, many of which will be unfamiliar and involve build processes for the project from the source code. That is a bit beyond this course (though we cover it in MAP675!), but for now we want to draw our attention to **examples** directory within this repository.
 
-You'll notice a directory named **dist/**. This is where the "distribution" code for Bootstrap resides. This is the code we can copy and paste into our own projects to make Bootstrap work (with the help of JQuery). It's also the code that a remote CDN would deliver to your web page, like in the starter example above.
-
-![Finding the "distribution" Bootstrap code](graphics/bootstrap-dist.gif)  
-**Figure 19.** Finding the "distribution" code in the Bootstrap repository.
-
-We can also navigate into the **docs/** directory to find a directory named **examples/**, which contains the HTML/CSS/JS for all the examples we see on the examples page.
+Navigate into the **site/docs/4.4** directory to find a directory named **examples/**, which contains the HTML and file for custom CSS for all the examples we see on the examples page. We will need to insert this HTML into our **lesson/index.html** and copy the CSS file, too.
 
 ![Finding the "examples" code in the Bootstrap repository](graphics/bootstrap-examples.gif)  
-**Figure 20.** Finding the "examples" code in the Bootstrap repository.
+*Finding the "examples" code in the Bootstrap repository.*
 
-Open the entire **bootstrap-4.0.0-dist/** directory in a text editor such as Atom or Brackets (but again, keep this separate in your text editor from your module-01 code and don't get the various **index.html** files confused). Within our text editor, find the **starter-template/** directory and open the two files it comprises with your code editor: the usual **index.html** file and a file named **starter-template.css**.
+Open the entire **bootstrap-4.4.1-dist/** directory in a text editor (but again, keep this separate in your text editor from your module-01 code and don't get the various **index.html** files confused). Within our text editor, find the **starter-template/** directory and open the two files it comprises with your code editor: the usual **index.html** file and a file named **starter-template.css**.
 
-Note that you can render the examples in your browser using a local host/live-server, to examine the output in your browser. You'll need to navigate to the correct path within the URL bar of your browser (e.g., `http://localhost/docs/4.0/examples/starter-template/`).
+You'll find that the starter template HTML doesn't contain a `<head></head>` element nor any links to JS files. This HTML represents what goes inside the `<body></body>` tag in our **lesson/index.html**, with some modifications.
 
-Begin to examine the code contained within the starter template. It's a best practice to load CSS stylesheets within the `<head></head>` tags at the top of the document, and Bootstrap follows suit. Note the example uses a relative path to load the default Bootstrap CSS, which resides several levels up from the starter template's directory (`../../../../dist/css/bootstrap.min.css`). It also loads the **starter-template.css** file found within the directory.
+```html
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-![Examining the Bootstrap starter template's code in a code editor](graphics/starter-code.gif)  
-**Figure 21.** Examining the Bootstrap starter template's code in a code editor.
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1>Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  </div>
+
+</main><!-- /.container -->
+```
+
+This document is meant to be used with templating software to create documents on-the-fly. However, we can build our page and strengthen our knowledge in assembling a properly-formatted HTML document. 
+
+Insert the above code after the `<body>` tag in the **lesson/index.html**. Delete the `h1` element and modify the `title` tag to reflect the new document. Create, or copy, the **starter-template.css**, add it to you **lesson/** folder and add the resource to **lesson/index.html** `head` section after the Bootstrap CSS. Finally, add a `<script></script>` tag and a `console.log()` function to verify it works. Your **lesson/index.html** should look similar to:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My custom CSS -->
+    <link rel="stylesheet" href="starter-template.css">
+
+
+    <title>Hello, world! My first starter template!!
+    </title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    <main role="main" class="container">
+    
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+    
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        console.log("Bring it on!")
+    </script>
+    </body>
+</html>
+```
+
+
+Render the example in your browser using a local host/live-server. e.g., `http://127.0.0.1:5500/lesson/` and examine the output. Does it work? Yea!
+
+![Successful starter template](graphics/starter-template-success.png)    
+*Successful starter template in your lesson repository*
+
+Begin to examine the code contained within the starter template. It's a best practice to load CSS stylesheets within the `<head></head>` tags at the top of the document, and Bootstrap follows suit. 
 
 Next, study the HTML elements written within the `<body></body>` tags. This is where we write the content of our web page. This particular template is mostly just the navigation bar at the top. But we can note the class names applied to all the elements. All of these class names have rules specified within the **bootstrap.min.css**, except one. The class name `starter-template` is written within the second stylesheet loaded by the document, the **starter-template.css** file. The key insight here is that we first load the Bootstrap CSS but can then write our own custom CSS definitions to modify the layout and design further.
 
-![Noting the custom class name defined outside of Bootstrap's core CSS](graphics/starter-code2.gif)  
-**Figure 22.** Noting the custom class name defined outside of Bootstrap's core CSS.
 
-Finally, we note that Bootstrap loads the JavaScript at the bottom of the page, again adhering to best practices. The document loads three JavaScript files:
+Finally, we note that Bootstrap loads the JavaScript at the bottom of the page from a remote CDN, again adhering to best practices. The document loads three JavaScript files:
 
-1. JQuery's minified slim version, which the script attempts to load from a remote CDN, (`https://code.jquery.com/jquery-3.2.1.slim.min.js`)
+1. JQuery's minified slim version [jQuery](https://jquery.com/)
 2. A minified JavaScript library named [Popper.js](https://popper.js.org/), which provides for some flashy tooltip and mouseover behavior (`popper.min.js`), and
 3. Bootstrap's minified JavaScript file (`bootstrap.min.js`)
 
-![Noting the JS files loaded in the starter template from both remote and local sources](graphics/starter-code3.gif)  
-**Figure 23.** Noting the JS files loaded in the starter template from both remote and local sources.
 
-It's important to understand the relative versus absolute paths within this document that load these various resources from different places in the file/directory structure of the repository (i.e., a directory named **assets/** and another named **dist/**).
+Finally, add your custom JS after the Bootstrap link. You might have noticed the pattern that we add our custom CSS and JS after loading the resources needed by Bootstrap. 
 
-You won't be editing or working with this file with the Bootstrap repository. Rather, part of your task as a student of web design and development is to puzzle through which pieces of this template you can grab and stick into your own page, and how to adjust the paths looking to load CSS, JavaScript, and font/icon/image resources so that the page loads correctly. It's a messy process at times but a great learning exercise, and you can eventually get your page working as you intend.
+This example shows how to build a page from scratch, but you won't be editing or assembling files from Bootstrap's source code. Rather, part of your task as a student of web design and development is to puzzle through which pieces of a template you can grab and stick into your own page, and how to adjust the paths looking to load CSS, JavaScript, and font/icon/image resources so that the page loads correctly. It's a messy process at times but a great learning exercise, and you can eventually get your page working as you intend.
 
 However, because we don't have ten weeks to master responsive web design and Bootstrap's framework (we have maps to make!), I've provided a template to keep us moving.
 
 ## Modifying a template's theme
 
-Save any changes to your **index.html** file created in the previous sections and close that file within your code editor. Next, open the **lesson-01-template** included with this repository. Render the directory's **index.html** file in your browser using a local server. You should see the following page:
+Save any changes to your **index.html** file created in the previous sections and close that file within your code editor. Next, open the **lesson-template** included with this repository. Render the directory's **index.html** file in your browser using a local server. You should see the following page:
 
 ![A basic starter template for a New Maps Plus portfolio](graphics/nmp-starter-template.png)  
-**Figure 23.** A basic starter template for a New Maps Plus portfolio.
+*A basic starter template for a New Maps Plus portfolio.*
 
 This is a basic and relatively unstyled one-page portfolio template (at least regarding typography and colors). It is built using Bootstrap and a combination of starter templates provided by another good resource: [Start Bootstrap](https://startbootstrap.com/), which offers free Bootstrap themes and templates.
 
@@ -421,23 +536,25 @@ You can preview or download the source code to these templates to incorporate it
 Beyond providing a basic layout for three sections (a header/splash section, a section for showcasing projects, and an "about" section), the template I've provided also contains class definitions allowing for a responsive, mobile-friendly user experience. Again, you can switch your browser to responsive/device mode to see how the layout collapses and responds at various widths. It is also using some JavaScript to scroll smoothly between sections, enhancing the user experience.
 
 ![The responsive nature of the starter template](graphics/nmp-template-responsive.gif)  
-**Figure 25.** The responsive nature of the starter template.
+*The responsive nature of the starter template.*
 
 This template isn't intended to be a finished product, but rather a jumping off place for experimenting with your own portfolio page. Before you're set free to do so, let's run through a few important aspects of this template.
 
 ### File/directory structure
 
-Carefully examine the file/directory structure. You'll notice that along with the **index.html** file, there are four directories: **css/**, **images/**, **js/**, and **vendor**. There are many ways to organize the file/directory structure of a website or web application, but this is a fairly common way. We're separating our CSS and JS resources from the HTML document, which makes writing within and maintaining the HTML document much more manageable.
+Carefully examine the file/directory structure. You'll notice that along with the **index.html** file, there are four directories: **css/**, **images/**, **js/**, and **vendor/**. There are many ways to organize the file/directory structure of a website or web application, but this is a fairly common way. 
+
+Note that we're separating our CSS and JS resources from the HTML document, which makes writing within and maintaining the HTML document much more manageable.
 
 ![The file/directory structure of the starter template](graphics/nmp-file-directory.png)  
-**Figure 26.** The file/directory structure of the starter template.
+*The file/directory structure of the starter template.*
 
-Furthermore, separating the "vendors" or external libraries from our own custom JS and CSS makes it easier to version libraries we're using and update them.
+Furthermore, separating the "vendors" or external libraries from our own custom JS and CSS makes it easier to version libraries we're using and update them. 
 
 Examine the files within each directory. Under **vendor/bootstrap/** you can see Bootstrap's **css/** and **js/** directories from the **dist/** directory we acknowledged earlier. I've simply copied these directories from the GitHub repository into this project.
 
 ![Expanded file/directory structure of the starter template.](graphics/nmp-file-directory2.png)  
-**Figure 27.** Expanded file/directory structure of the starter template.
+*Expanded file/directory structure of the starter template.*
 
 The important part is, if you open the **index.html** file in your text editor, you'll see that the document uses relative paths to load these files at runtime.
 
@@ -463,7 +580,12 @@ Beyond loading JQuery, which Bootstrap requires, the page also loads an addition
 
 The document is broken into different sections using `<section>` tags. Beyond using a few semantically appropriate tags such as `<h1>`, `<p>`, `<a>`, and `<dl>` (definition list), the page is mostly build using generic `<div>` tags with Bootstrap's class names applied to them.
 
+Before moving on, compare the **lesson-template/** folder to the **lesson/index.html**. The template folder has the required Bootstrap resources saved locally. The **lesson/index.html** uses a CDN to load Bootstrap's required resources remotely. This is another common way to organize a web project and many templates use CDNs. 
+
+The advantage of using local files, e.g., in "vendors" folder, is being able to work offline and "locking" your site to specific resource versions. Working with a CDN can provide performance increases, especially if your resource is commonly used, like jQuery. So, it's essential to recognize how your assets/resources are loaded in your project.
+
 Let's now work on modifying the theme. But first, consider the distinction between a template and a theme. Above, we looked at Bootstrap's official examples, which are templates. These are minimally-styled in terms of typography and color but provide a basic layout structure. A theme, on the other hand, involves a much more carefully designed set of style rules which give the page a unique sense of expression. Even if Start Bootstrap's [Clean Blog](https://blackrockdigital.github.io/startbootstrap-clean-blog/) is minimal in its design, it's much more of a designed theme than the template I've provided for you.
+
 
 Let's now consider a fun approach for developing a theme from a template.
 
@@ -472,22 +594,22 @@ Let's now consider a fun approach for developing a theme from a template.
 [Bootswatch](https://bootswatch.com/) is a fun site offering several free Bootstrap themes you can use for free.
 
 ![Bootstrap's free themes](graphics/bootswatch.png)  
-**Figure 28.** Bootstrap's free themes.
+*Bootstrap's free themes.*
 
-Clicking "Preview" on the "Darkly" theme allows you to see how the theme styles a variety of HTML elements that the default, or core, Bootstrap theme does.
+Clicking **Preview** on the **Darkly** theme allows you to see how the theme styles a variety of HTML elements that the default, or core, Bootstrap theme does.
 
 ![A preview of the styles applied using the Darkly Bootstrap theme](graphics/darkly-preview.gif)  
-**Figure 29.** A preview of the styles applied using the Darkly Bootstrap theme.
+*A preview of the styles applied using the Darkly Bootstrap theme.*
 
 Return to Bootstrap's homepage and click "Download" on the "Darkly" theme. Curiously, it doesn't download any files for us. Rather, we're looking at a CSS file named **bootstrap.min.css**. 
 
 ![The CSS of the Darkly Bootstrap theme](graphics/darkly-css.png)  
-**Figure 30.** The CSS of the Darkly Bootstrap theme.
+*The CSS of the Darkly Bootstrap theme.*
 
 Copy all the CSS to your clipboard. Then, within your text editor open the **vendor/bootstrap/css/bootstrap.min.css**. Delete all the CSS within that file and paste in the CSS from the Darkly theme. Save the changes to the bootstrap.min.css file and refresh your browser. Wallah! Like magic, the theme has changed, and the page has a dramatically different look and feel, primarily through modifying the typography and colors.
 
 ![Swapping the default Bootstrap theme with the Darkly theme](graphics/swap-darkly.png)  
-**Figure 31.** Swapping the default Bootstrap theme with the Darkly theme.
+*Swapping the default Bootstrap theme with the Darkly theme.*
 
 This isn't to say that the layout and design don't need to be tweaked and more custom CSS written. For instance, if we're using a `bg-dark` class on a section we may need to remove that class or change it to `bg-light`. Good design is never easy, and it's the small iterative tweaks such as adjusting margin and padding that make the final project feel whole and complete. Still, the themes at Bootswatch can inspire our more customized design of a page or application.
 
@@ -514,7 +636,7 @@ body {
 Saving these changes and refreshing the browser will reveal that the text is now rendered using the Lato font.
 
 ![Applyng the Google font Lato to the starter template's theme](graphics/lato.png)  
-**Figure 32.** Applyng the Google font Lato to the starter template's theme.
+*Applying the Google font Lato to the starter template's theme.*
 
 What if we wanted to style the `<a>` tags using an orange color, rather than the default blue? We can write another rule to do this:
 
@@ -541,13 +663,13 @@ header {
 ```
 
 ![Applying a background color rule to the header element](graphics/header-blue.png)  
-**Figure 34.** Applying a background color rule to the header element.
+*Applying a background color rule to the header element.*
 
 In this way, we can begin to customize the styles of our bootstrap theme without simply swapping in an existing theme.
 
 ## Conclusions: Toward Content
 
-This lesson walked us through the basics of using Bootstrap and developing or modifying a CSS theme. The purpose of a web portfolio, however, isn't merely to display a working website with Lorem ipsum content. In order for the form to work, it needs a purpose. Your task within the [assignment](assignment/) is to complete this design process by populating a working portfolio page with content.
+The purpose of a web portfolio, however, isn't merely to display a working website with Lorem ipsum content. This lesson walked us through the basics of *how* to use Bootstrap and to develop/modify an existing CSS theme. You can use any theme/style you want, but ask *why* you make design choices that you do. In order for the form to work, it needs a purpose. Your task within the [assignment](assignment/) is to complete this design process by populating a working portfolio page with content.
 
 ## Resources
 
