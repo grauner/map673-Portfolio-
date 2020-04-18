@@ -8,11 +8,11 @@ body {
   font-family: Lato; /* apply custom rules to the body here */
 }
 a {
-  color: orange;
+  color: green;
 }
 header {
   padding: 154px 0 100px;
-  background-color: #448ee4;
+  background-color: tan;
 }
 
 /* media query when the media is wider than 992px */
